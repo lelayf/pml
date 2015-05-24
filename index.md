@@ -5,6 +5,7 @@ First of all let's load the dataset.
 
 
 ```r
+library(ggplot2)
 d <- read.csv('pml-training.csv')
 ```
 
@@ -13,9 +14,7 @@ d <- read.csv('pml-training.csv')
 qplot(d$user_name)
 ```
 
-```
-## Error in eval(expr, envir, enclos): could not find function "qplot"
-```
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 ```r
 summary(d$user_name)
@@ -42,9 +41,7 @@ Then we look for class imbalance :
 qplot(d$classe)
 ```
 
-```
-## Error in eval(expr, envir, enclos): could not find function "qplot"
-```
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 Although class A is about 20% more frequent than all other classes we will assume there is no class imbalance so important that it would be an issue for our modeling efforts.
 

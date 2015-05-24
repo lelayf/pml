@@ -4,6 +4,7 @@ Predicting physical workout correctness
 First of all let's load the dataset.
 
 ```{r}
+library(ggplot2)
 d <- read.csv('pml-training.csv')
 ```
 
